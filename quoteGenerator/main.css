@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  background: black;
+}
+
+body {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#quote__wrapper {
+  border: 3px solid goldenrod;
+  padding: 20px 100px;
+
+}
+
+.quote, .author {
+  margin-bottom: 32px;
+}
+
+.quote {
+  line-height: 2rem;
+  font-size: 30px;
+}
+
+.quote::after {
+  content: '”';
+  font-size: 30px;
+  color: gold;
+}
+.quote::before {
+  content: '“';
+  font-size: 30px;
+  color: gold;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background: goldenrod;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Single Day', cursive;
+}
