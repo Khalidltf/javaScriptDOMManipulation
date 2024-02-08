@@ -42,9 +42,13 @@ body {
   text-align: justify;
 }
 
+span {
+  background: #0000003a;
+}
+
 .author {
+  color: white;
   font-size: 32px;
-  color: black;
   background: transparent;
 }
 
