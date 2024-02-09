@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+  background-image: url(//unsplash.it/1028/1000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 65%;
+  padding: 2.343rem;
+  border-radius: 50px 100px 25px 75px;
+  box-shadow: -10px -10px 3px yellowgreen;
+
+  .title {
+    color: yellowgreen;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.container .content .question {
+  font-size: 22px;
+  padding: 1rem 0;
+  text-decoration: underline;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "+";
+    font-size: 37px;
+    color: yellowgreen;
+    position: absolute;
+    right: 0;
+    top: 11px;
+  }
+}
+
+.container .content .answer {
+  padding: 12px 0;
+  width: 100%;
+  text-align: justify;
+  font-size: 19px;
+  color: #000000a8;
+
+  line-height: 27px;
+
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
