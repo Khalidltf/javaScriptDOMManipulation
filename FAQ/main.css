@@ -50,13 +50,13 @@ body {
 }
 
 .container .content .answer {
-  padding: 12px 0;
+  padding-top: 15px;
   width: 100%;
   text-align: justify;
   font-size: 19px;
   color: #000000a8;
 
-  line-height: 27px;
+  line-height: 1.5;
 
   height: 0px;
   overflow: hidden;
