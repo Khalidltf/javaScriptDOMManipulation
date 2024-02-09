@@ -62,3 +62,21 @@ body {
   overflow: hidden;
   transition: 0.5s;
 }
+
+.container .content.active .answer {
+  height: 150px;
+}
+.container .content.active .question {
+  text-decoration: none;
+  transition: 0.5s;
+  color: yellowgreen;
+  &::after {
+    content: "-";
+    font-size: 37px;
+    color: black;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+    top: 11px;
+  }
+}

@@ -1,7 +1,13 @@
-let content = document.getElementsByClassName("content");
+const content = Array.from(document.getElementsByClassName("content"));
+
+let items = [];
 
 for (let i = 0; i < content.length; i++) {
   content[i].addEventListener("click", () => {
-    this.classList.toggle("active");
+    const items = content.filter((item) => item.classList.contains("active"));
+    items.forEach((item) => {
+      item.classList.remove("active");
+    });
+      content[i].classList.toggle("active");
   });
 }
