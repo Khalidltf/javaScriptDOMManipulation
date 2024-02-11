@@ -7,11 +7,11 @@
 }
 
 body {
-  font-family: "Single Day", cursive;
+  font-family: "Single Day", sans-serif;
   font-weight: 400;
   font-style: normal;
   height: 100vh;
-  background-image: url(//unsplash.it/1026/1000);
+  background-image: url(//unsplash.it/1028/1000);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -22,17 +22,23 @@ body {
 }
 
 #container {
-  width: 350px;
+  width: 500px;
   background: #fff;
   padding: 50px 10px;
+
   border: none;
   border-radius: 12px 22px;
   box-shadow: 0 0 5px;
+}
 
+.add__task-container {
   display: flex;
+  margin-bottom: 50px;
+  /* align-items: center; */
 }
 
 input {
+  font-family: "Single Day", sans-serif;
   flex: 5;
   margin-right: 19px;
   border-radius: 11px;
@@ -46,14 +52,58 @@ input {
   padding: 6px;
   font-size: 1.2rem;
 
+  color: goldenrod;
+  background-color: #eee;
+
+  border: 3px solid gold;
+  border-radius: 5px;
+}
+
+.add__btn:hover {
+  color: salmon;
+  border: 3px solid salmon;
+}
+
+.tasks {
+  margin: 0 20px;
+
+  li {
+    font-size: 24px;
+    color: #000;
+    /* margin-right: 50px; */
+  }
+}
+
+.done__btn {
+  transition: 0.3s;
+  padding: 0 6px;
+  font-size: 1.2rem;
+
   color: greenyellow;
   background-color: #eee;
 
   border: 3px solid greenyellow;
   border-radius: 5px;
-}
+  margin-right: 20px;
 
-.add__btn:hover {
-  color: green;
-  border: 3px solid green;
+  &:hover {
+    color: green;
+    border: 3px solid green;
+  }
+}
+.remove__btn {
+  transition: 0.3s;
+  padding: 0 6px;
+  font-size: 1.2rem;
+
+  color: palevioletred;
+  background-color: #eee;
+
+  border: 3px solid palevioletred;
+  border-radius: 5px;
+
+  &:hover {
+    color: red;
+    border: 3px solid red;
+  }
 }

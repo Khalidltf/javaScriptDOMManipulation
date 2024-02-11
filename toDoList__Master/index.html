@@ -25,16 +25,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script type="module" src="app.js"></script>
   </head>
   <body>
     <div id="container">
       <div class="add__task-container">
-        <input type="text" placeholder="add task..." id="input__task" />
-        <button class="add__btn"><i class="fa-solid fa-plus"></i></button>
+        <input id="task" name="task" type="text" placeholder="code..." />
+        <button class="add__btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </div>
-      <div class="tasks"></div>
+      <main>
+        <ol class="tasks"></ol>
+      </main>
     </div>
-
-    <script src="app.js"></script>
   </body>
 </html>
