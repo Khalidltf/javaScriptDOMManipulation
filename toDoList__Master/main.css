@@ -85,7 +85,7 @@ input {
 
   border: 3px solid greenyellow;
   border-radius: 5px;
-  margin-right: 20px;
+  margin-left: 20px;
 
   &:hover {
     color: green;
@@ -108,4 +108,8 @@ input {
     color: red;
     border: 3px solid red;
   }
+}
+
+.completed {
+  text-decoration: line-through;
 }
